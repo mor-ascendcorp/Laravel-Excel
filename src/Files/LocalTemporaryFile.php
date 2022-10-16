@@ -17,6 +17,8 @@ class LocalTemporaryFile extends TemporaryFile
         touch($filePath);
 
         $this->filePath = realpath($filePath);
+        var_dump($this->filePath);
+        die;
     }
 
     /**
